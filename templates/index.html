@@ -5,10 +5,12 @@
         <title>ついぐ</title>
     </head>
     <body>
-        <h1>Twig test page</h1>
-        どうよ？({{lang}})
-        {{ msg }}
+        <h1>Twig による自動エスケープのサンプル</h1>
+        <p>日本語は使えるかな？({{lang}})</p>
+        <p>エスケープされてるかな？{{ msg }}</p>
 
+        <h2>エスケープが必要そうな値を入力してください。</h2>
+        <p>例："K&amp;R" vs &lt;O'Reilly&gt;
         <form action="" method="GET">
             <input name="msg" type="text" value="{{msg}}">
             <input type="submit" value="送信">
